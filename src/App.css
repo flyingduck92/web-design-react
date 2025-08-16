@@ -1,0 +1,177 @@
+/* Base */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  min-width: 48rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  padding-inline: 1.125rem;
+  background-color: #0A2239;
+}
+
+picture,
+img {
+  width: 100%;
+  padding-block: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+
+/* Body */
+nav {
+  display: flex;
+  background-color: #0A2239;
+  color: #FFEEDB;
+
+  & #logo a {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+
+  & #menus {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+
+    & li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & a {
+        padding: .125rem;
+        font-size: 1.125rem;
+
+        &:hover {
+          color: #53a2be;
+        }
+      }
+    }
+  }
+}
+
+article#exhibition {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  & section {
+    padding: 1rem;
+    background-color: #61C9A8;
+
+    & a {
+      font-weight: 400;
+    }
+
+    & h1 {
+      font-size: 2rem;
+      color: #4C3B4D;
+    }
+
+    & p {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+}
+
+article#ticket {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  & section {
+    background-color: #ffeedb;
+    padding: 1rem;
+    /* overflow: hidden; */
+
+    & img {
+      width: 100%;
+      height: 217px;
+      object-fit: cover;
+    }
+
+    & h1 {
+      font-size: 2rem;
+      color: #4C3B4D;
+    }
+
+    & p {
+      margin-top: 1.5rem;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+
+}
+
+a.btn {
+  padding: .5rem 1.5rem;
+  color: #FFEEDB;
+  background-color: #A53860;
+
+  &:hover {
+    background-color: #cf4f7e;
+  }
+}
+
+article#working-hours {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  & section {
+    background-color: #a53860;
+    padding: 1rem;
+    color: #ffeedb;
+
+    & h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    & h4 {
+      font-size: 1.25rem;
+    }
+
+    & p {
+      margin-bottom: .5rem;
+      font-size: 1rem;
+    }
+
+  }
+}
+
+footer {
+  padding: 1rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffeedb;
+}

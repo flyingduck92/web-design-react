@@ -1,26 +1,29 @@
+import ExhibitionItem from './ExhibitionItem'
+
+const exhibitions = [
+  {
+    title: "Autumn Holiday Activities",
+    description: "Join our family-friendly events, hands-on workshops, guided tours, and fun dino-themed experiences this Summer Holiday."
+  },
+  {
+    title: "The Science of Nature",
+    description: "Explores how the natural world works, from the smallest living organisms to vast ecosystems."
+  },
+  {
+    title: "Save our Earth",
+    description: "Help us to save the Earth from pollution, climate change, and environmental damages."
+  },
+]
+
+
 function Exhibition() {
   return (
     <>
       <h1 className='heading-title'>Exhibition and Events</h1>
       <article id="exhibition">
-        <section>
-          <a href="#">
-            <h1>Autumn Holiday Activities</h1>
-            <p>Join our family-friendly events, hands-on workshops, guided tours, and fun dino-themed experiences this Summer Holiday.</p>
-          </a>
-        </section>
-        <section>
-          <a href="#">
-            <h1>The Science of Nature</h1>
-            <p>Explores how the natural world works, from the smallest living organisms to vast ecosystems.</p>
-          </a>
-        </section>
-        <section>
-          <a href="#">
-            <h1>Save our Earth</h1>
-            <p>Help us to save the Earth from pollution, climate change, and environmental damages.</p>
-          </a>
-        </section>
+        {exhibitions.map(exhibition => (
+          <ExhibitionItem exhibition={exhibition} />
+        ))}
       </article>
     </>
   )

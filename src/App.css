@@ -134,8 +134,8 @@ article#ticket {
 
   & section {
     background-color: #ffeedb;
-    padding: 1rem;
-    /* overflow: hidden; */
+    padding: 2rem;
+    overflow: hidden;
 
     & img {
       width: 100%;

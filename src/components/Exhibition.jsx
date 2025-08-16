@@ -2,7 +2,7 @@ import ExhibitionItem from './ExhibitionItem'
 
 const exhibitions = [
   {
-    title: "Autumn Holiday Activities",
+    title: "Summer Holiday Activities",
     description: "Join our family-friendly events, hands-on workshops, guided tours, and fun dino-themed experiences this Summer Holiday."
   },
   {

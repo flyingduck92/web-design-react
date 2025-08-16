@@ -135,7 +135,6 @@ article#ticket {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto auto;
 
   & section {
     display: grid;

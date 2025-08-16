@@ -29,7 +29,7 @@ footer {
 picture,
 img {
   width: 100%;
-  padding-block: 1.6rem;
+  margin-block: 1.5rem;
 }
 
 a {
@@ -71,6 +71,27 @@ nav {
         }
       }
     }
+  }
+}
+
+.hero {
+  position: relative;
+
+  & picture,
+  img {
+    filter: brightness(70%);
+    z-index: 2;
+  }
+
+  & h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-85%, -50%);
+    margin: 0;
+    font-size: 4rem;
+    color: #FFEEDB;
+    z-index: 1;
   }
 }
 

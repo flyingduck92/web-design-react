@@ -5,6 +5,8 @@ function TicketItem({ ticket }) {
       <div className='ticket-wrapper'>
         <h1>{ticket.title}</h1>
         <p>{ticket.description}</p>
+      </div>
+      <div>
         <a className='btn' href="#">Buy</a>
       </div>
     </section>

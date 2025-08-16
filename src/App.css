@@ -101,10 +101,14 @@ article#exhibition {
   gap: 1rem;
 
   & section {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
     padding: 1rem;
     background-color: #61C9A8;
 
     & a {
+      display: contents;
       font-weight: 400;
     }
 
@@ -131,8 +135,13 @@ article#ticket {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto auto;
 
   & section {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+
     background-color: #ffeedb;
     padding: 2rem;
     overflow: hidden;
@@ -150,23 +159,23 @@ article#ticket {
 
     & p {
       margin-top: 1.5rem;
-      font-size: 1.5rem;
+      font-size: 1.35rem;
       margin-bottom: 1.5rem;
     }
+
+    & a.btn {
+      padding: .5rem 1.5rem;
+      color: #FFEEDB;
+      font-size: 1.5rem;
+      background-color: #A53860;
+
+      &:hover {
+        background-color: #cf4f7e;
+      }
+    }
   }
-
-
 }
 
-a.btn {
-  padding: .5rem 1.5rem;
-  color: #FFEEDB;
-  background-color: #A53860;
-
-  &:hover {
-    background-color: #cf4f7e;
-  }
-}
 
 article#working-hours {
   margin-top: 2rem;

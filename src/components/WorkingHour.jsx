@@ -10,7 +10,7 @@ function WorkingHours() {
           Hanley, Stoke-on-trent ST1 3DW
         </p>
 
-        <h4>Office Hours</h4>
+        <h4>Weekday Hours</h4>
         <p><time>Monday - Friday <br />9:00 AM - 5:00 PM</time></p>
 
         <h4>Weekend Hours</h4>
